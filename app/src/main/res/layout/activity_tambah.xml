@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colors1"
+    tools:context=".TambahActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_tambah_produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/tv_judul_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Data Produk"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Produk"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="6dp"
+            />
+
+        <EditText
+            android:id="@+id/et_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis produk"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="6dp"
+            />
+
+        <EditText
+            android:id="@+id/et_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga produk"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="6dp"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIMPAN"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:cornerRadius ="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
